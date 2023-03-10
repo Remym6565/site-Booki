@@ -6,6 +6,29 @@ body {
     margin: unset;
 }
 
+#layout {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    #layout {
+        max-width: 992px;
+    }
+  }
+
+@media (min-width: 1200px) {
+    #layout {
+        max-width: 1200px;
+    }
+  }
+
+@media (min-width: 1440px) {
+    #layout {
+        max-width: 1440px;
+    }
+  }
+
 .textcenter {
     list-style: center;
 }
@@ -53,11 +76,15 @@ body {
 
 main section div div p{
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
-main section div div h1{
-    margin-bottom: 5px;
+
+main section div div h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+
 
 header nav li a:hover {
     color:#0065FC;
@@ -116,6 +143,10 @@ header nav ul li {
     font-size: 18px;
 }
 
+.link-nocolor {
+    text-decoration: none;
+    color: black;
+}
 
 .research_input {
     border: none;
@@ -156,6 +187,7 @@ header nav ul li {
     width: 12px;
     margin: 12px;
     margin-right: 18px;
+    margin-left: 18px;
 }
 
 .search_filter div:hover {
@@ -165,7 +197,7 @@ header nav ul li {
 .search_filter div {
     margin-right: 22px;
     margin-left: 15px;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 30px;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -208,17 +240,29 @@ header nav ul li {
 }
 
 .img-hebergements {
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 124px;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
+.img-populaires {
+    object-fit: cover;
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.img-activites {
+    object-fit: cover;
+    width: 100%;
+    height: 445px;
+    border-radius: 20px 20px 0px 0px;
+}
 
 .d-around {
     display: flex;
-
+    justify-content: space-around;
 }
 
 .d-evenly {
@@ -226,26 +270,70 @@ header nav ul li {
     justify-content: space-evenly;
 }
 
-.d-column {
+.iconpop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+
+.d-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-spacebetween {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-hebergement {
-    width: 30%;
     height: auto;
     background-color:#FFFFFF ;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px -20px;
+    margin-bottom: 30px;
+}
+
+.card-populaire {
+    height: auto;
+    background-color:#FFFFFF ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px -20px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.card-activites {
+    height: auto;
+    background-color:#FFFFFF ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px -20px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .margin-card1 {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .margin-card2 {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .descriptioncard {
     margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.descriptionactivites {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.descriptionpop {
+    margin-left: 15px;
 }
 
 .starblue i {
@@ -254,4 +342,91 @@ header nav ul li {
 
 .stargrey i{
     color:#F2F2F2;
+}
+
+.col-4 {
+    width: 33.3%;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.d-flexstart {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.d-end {
+    display: flex;
+    align-self: flex-end;
+}
+
+.nolist {
+    padding: unset;
+    list-style-type: none;
+}
+
+.marginli {
+    margin-bottom: 15px;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin-top: 1rem;
+}
+
+.m-3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.m-4 {
+    margin-left: 1rem;
+}
+
+.m-5 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.m-6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.p-3 {
+    padding: 1rem;
+}
+
+
+.margin-top {
+    margin-top: 40px;
 }

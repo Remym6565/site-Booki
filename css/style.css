@@ -34,6 +34,19 @@ body {
     font-size: 18px;
 }
 
+.m-10 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.fontsize-16 {
+    font-size: 16px;
+}
+
+.fontweight-700 {
+    font-weight: 700;
+}
+
 .h4 {
     font-weight: 700;
     font-size: 16px;

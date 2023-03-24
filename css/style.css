@@ -489,12 +489,10 @@ header nav ul li {
         row-gap: 2rem;
     }
     .populaires {
-        margin-left: 0;
         margin-right: 10px;
     }
     .hebergements {
-        margin-left: 10px;
-        margin-right: 0;
+        margin-left: 10px;;
     }
     .img-populaires {
         height: 195px;

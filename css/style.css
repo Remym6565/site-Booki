@@ -12,7 +12,6 @@ body {
 }
 
 
-
 .textcenter {
     list-style: center;
 }
@@ -159,7 +158,7 @@ header nav ul {
 .button_research {
     background-color: #0065FC;
     color: white;
-    font-size: bold;
+    font-weight: bold;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
@@ -383,7 +382,7 @@ header nav ul {
 }
 
 .col-5 {
-    width: 66,6%;
+    width: 66.6%;
 }
 
 .d-flexstart {
